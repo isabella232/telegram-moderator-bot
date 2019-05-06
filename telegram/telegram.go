@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/freshautomations/telegram-moderator-bot/context"
-	"github.com/freshautomations/telegram-moderator-bot/db"
-	"github.com/freshautomations/telegram-moderator-bot/defaults"
+	"github.com/cosmos/telegram-moderator-bot/context"
+	"github.com/cosmos/telegram-moderator-bot/db"
+	"github.com/cosmos/telegram-moderator-bot/defaults"
 	"log"
 	"net/http"
 )
