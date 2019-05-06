@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
-	"github.com/freshautomations/telegram-moderator-bot/config"
-	"github.com/freshautomations/telegram-moderator-bot/defaults"
+	"github.com/cosmos/telegram-moderator-bot/config"
+	"github.com/cosmos/telegram-moderator-bot/defaults"
 	"log"
 	"net/http"
 )

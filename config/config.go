@@ -8,7 +8,6 @@ import (
 
 // Config holds a complete set of dynamic configuration.
 type Config struct {
-	Environment string `json:"ENVIRONMENT"`
 	AWSRegion   string `json:"AWSREGION"`
 	//	Timeout       int64  `json:"TIMEOUT"`
 	TelegramToken string `json:"TELEGRAMTOKEN"`
@@ -23,7 +22,6 @@ func GetConfigFromFile(configFile string) (*Config, error) {
 	}
 
 	cfg := Config{
-		Environment:   inicfg.Section("").Key("ENVIRONMENT").String(),
 		AWSRegion:     inicfg.Section("").Key("AWSREGION").String(),
 		TelegramToken: inicfg.Section("").Key("TELEGRAMTOKEN").String(),
 	}
@@ -38,7 +36,6 @@ func GetConfigFromFile(configFile string) (*Config, error) {
 // GetConfigFromENV reads the configuration from environment variables and returns a Config struct.
 func GetConfigFromENV() (*Config, error) {
 	config := Config{
-		Environment:   os.Getenv("ENVIRONMENT"),
 		AWSRegion:     os.Getenv("AWSREGION"),
 		TelegramToken: os.Getenv("TELEGRAMTOKEN"),
 	}

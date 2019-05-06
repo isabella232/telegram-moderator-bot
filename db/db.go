@@ -6,7 +6,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute"
-	"github.com/freshautomations/telegram-moderator-bot/context"
+	"github.com/cosmos/telegram-moderator-bot/context"
 	"os"
 	"strconv"
 	"time"
@@ -30,8 +30,8 @@ func Initialize(ctx *context.Context) {
 	}
 	ctx.AWSSession = session.Must(session.NewSessionWithOptions(session.Options{Config: awscfg}))
 	ctx.DDBSession = dynamodb.New(ctx.AWSSession)
-	ctx.DBUserTable = "tmb-" + ctx.Cfg.Environment + "-users"
-	ctx.DBWarnTable = "tmb-" + ctx.Cfg.Environment + "-warns"
+	ctx.DBUserTable = "tmb-users"
+	ctx.DBWarnTable = "tmb-warns"
 }
 
 func UpdateUserData(ctx *context.Context, User *UserData) (err error) {
