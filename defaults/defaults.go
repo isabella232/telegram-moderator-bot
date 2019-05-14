@@ -20,7 +20,7 @@ const ContentType = "application/json; charset=utf8"
 const TelegramAPIBase string = "https://api.telegram.org/bot"
 
 // Number of warns before a ban is issued. Todo: make it parameterized.
-const WarnLimit = 2
+const WarnLimit = 3
 
 // Debug messages
 const Debug = false
