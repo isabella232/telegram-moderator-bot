@@ -1,3 +1,5 @@
+> This repo is archived as of July 10, 2020 but made available for historical record.
+
 # Telegram-Moderator-Bot
 
 ## Overview
